@@ -1,0 +1,213 @@
+<html>
+<head><title>Activities</title></head>
+<body>
+
+<body bgcolor=#00a19c>
+<img src="logo.jpg" width="510px" height="70px" align=right>
+<DIV CLASS="banner">
+<div class="navbar">
+<ul>
+<b>
+<a href="index.html">Home</a>
+<a href="about_us.html">About Us</a>
+<a href="activities.html">Activities</a>
+<a href="news.html">News</a>
+<a href="donationform.html">Donation</a>
+<a href="contacts.html">Contacts</a>
+</b>
+</ul>
+</div>
+
+<center><h1>Activities</h1></center>
+
+<center><a href=ibadahkorban.html><img id="myImg" src="korban1.jpg" alt="Snow" style="width:100%;max-width:300px"></center>
+
+<div id="myModal" class="modal">
+
+<span class="close">&times;</span>
+
+<img class="modal-content" id="img01">
+
+<div id="caption"></div>
+
+</div>
+<center><h2>Ibadah Korban</h2><center>
+<br>
+<br>
+<br>
+
+<center><a href=donation.html><img id="myImg" src="ums2.jpg" alt="Snow" style="width:100%;max-width:300px"></center>
+
+<div id="myModal" class="modal">
+
+<span class="close">&times;</span>
+
+<img class="modal-content" id="img01">
+
+<div id="caption"></div>
+</div>
+<center><h2>Donation</h2><center>
+<br>
+<br>
+<br>
+
+<center><a href=bondingday.html><img id="myImg" src="uitm1.jpg" alt="Snow" style="width:100%;max-width:300px"></center>
+
+<div id="myModal" class="modal">
+
+<span class="close">&times;</span>
+
+<img class="modal-content" id="img01">
+
+<div id="caption"></div>
+</div>
+<center><h2>Bonding Day</h2></center>
+<br>
+<br>
+<br>
+
+<center><section id="disclaimer">
+<p1>&copy; 2023 Home Tuaran. All Rights Reserved. Recommended Browser: Microsoft Edge. Last Updated: 04th January 2024</p1>
+</section></center>
+
+<center><footer>
+<p1>Contact us: hometuaran@gmail.com</p1>
+</footer></center>
+
+<style>
+
+p{
+text-align:center;
+background-color:none !important;
+}
+
+.navbar
+{
+background-color: white;
+overflow: hidden;
+}
+
+.navbar a
+{
+padding:14px 14px; 
+float: left;
+color: black;
+text-align: center;
+text-decoration: none;
+font-size: 20px; 
+}
+.navbar a:hover
+{
+background-color: white;
+color: #00a19c;
+}
+
+.button a
+{
+text-decoration: none;
+}
+
+
+
+h2 {
+  color: black;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</style>
+
+</body>
+</html>
